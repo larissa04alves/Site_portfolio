@@ -6,10 +6,10 @@
 	<a href="#">
 		<img class="logo" src={logo} alt="Logo" />
 	</a>
-	<nav class="links animado">
-		<a href="#">Home</a>
-		<a href="#">Sobre</a>
-		<a href="#">Portfólio</a>
+	<nav class="links">
+		<a class="animado" href="/">Home</a>
+		<a class="animado" href="#">Sobre</a>
+		<a class="animado" href="#">Portfólio</a>
 	</nav>
 	<a href="#">
 		<button class="btn"> Contato </button>
@@ -42,16 +42,16 @@
 		content: '';
 		position: absolute;
 		width: 100%;
-		height: 2px;
-		border-radius: 3px;
+		height: 4px;
+		border-radius: 2px;
 		background-color: #a666ff;
 		bottom: 0;
 		left: 0;
 		transform-origin: right;
 		transform: scaleX(0);
-		transition: transform 0.3s ease-in-out;
+		transition: transform 0.2s ease-in-out;
 	}
-	.animado :hover::before {
+	.animado:hover::before {
 		transform-origin: left;
 		transform: scaleX(1);
 	}
@@ -62,5 +62,10 @@
 		padding: 6px 30px;
 		color: #e1cdfe;
 		font-weight: 600;
+	}
+
+	.btn:hover {
+		background-color: #3f1397;
+		border: 1px solid #3f1397;
 	}
 </style>

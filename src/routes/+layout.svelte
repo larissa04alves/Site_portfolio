@@ -6,16 +6,22 @@
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
+	import Sociais from '$lib/assets/components/Sociais.svelte';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
 <AppShell>
-	<!-- (sidebarLeft) -->
 	<Header />
+	<!-- (sidebarLeft) -->
+
 	<!-- (sidebarRight) -->
 	<!-- (pageHeader) -->
 	<!-- Router Slot -->
-	<slot />
+	<main class="flex h-full w-full">
+		<Sociais />
+		<div class="flex flex-col w-full"><slot /></div>
+	</main>
+
 	<!-- ---- / ---- -->
 	<!-- (footer) -->
 </AppShell>
