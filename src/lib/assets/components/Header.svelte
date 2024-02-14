@@ -7,8 +7,8 @@
 		<img class="logo" src={logo} alt="Logo" />
 	</a>
 	<nav class="links">
-		<a class="animado" href="/">Home</a>
-		<a class="animado" href="#">Sobre</a>
+		<a class="animado" href="#1">Home</a>
+		<a class="animado" href="#2">Sobre</a>
 		<a class="animado" href="#">Portfólio</a>
 	</nav>
 	<a href="#">
@@ -18,20 +18,25 @@
 
 <style>
 	.geral {
+		position: fixed;
+		box-shadow: 0px 0px 8px #3f1397;
+		background-color: #151515;
+		width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin: 10px 150px 0 150px;
+		padding: 5px 70px 5px 70px;
 	}
 
 	.logo {
-		width: 180px;
+		width: 150px;
 	}
 
 	.links {
 		display: flex;
 		gap: 60px;
-		font-weight: 500;
+		font-weight: 600;
+		font-size: 16px;
 	}
 
 	.animado {
@@ -59,7 +64,7 @@
 	.btn {
 		border: 1px solid #a666ff;
 		border-radius: 12px;
-		padding: 6px 30px;
+		padding: 5px 25px;
 		color: #e1cdfe;
 		font-weight: 600;
 	}

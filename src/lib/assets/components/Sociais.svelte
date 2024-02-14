@@ -5,20 +5,20 @@
 	import logo_GiHub from '$lib/assets/img/logo_GiHub.svg';
 </script>
 
-<section class=" h-full flex items-end justify-end absolute">
+<section>
 	<div class="logos">
-		<img src={logo_X} alt="Logo" />
-		<img src={logo_instagram} alt="Logo" />
-		<img src={logo_linkedin} alt="Logo" />
-		<img src={logo_GiHub} alt="Logo" />
-		<div class="linha w-1/2"></div>
+		<img class="logo" src={logo_X} alt="Logo" />
+		<img class="logo" src={logo_instagram} alt="Logo" />
+		<img class="logo" src={logo_linkedin} alt="Logo" />
+		<img class="logo" src={logo_GiHub} alt="Logo" />
+		<div class="linha"></div>
 	</div>
 </section>
 
 <style>
 	section {
 		display: flex;
-		height: full;
+		height: 100%;
 		justify-content: flex-end;
 		align-items: flex-end;
 		position: absolute;
@@ -29,8 +29,12 @@
 		padding: 0 40px;
 		gap: 1.25rem;
 	}
+	.logo {
+		width: 20px;
+	}
 	.linha {
 		border-right: 1px solid #828282;
-		height: 300px;
+		height: 200px;
+		width: 50%;
 	}
 </style>

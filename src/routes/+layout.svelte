@@ -1,4 +1,5 @@
 <script lang="ts">
+	import '../app.pcss';
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import Header from '$lib/assets/components/Header.svelte';
@@ -11,14 +12,14 @@
 </script>
 
 <AppShell>
-	<Header />
+	<Header></Header>
 	<!-- (sidebarLeft) -->
 
 	<!-- (sidebarRight) -->
 	<!-- (pageHeader) -->
 	<!-- Router Slot -->
 	<main class="flex h-full w-full">
-		<Sociais />
+		<Sociais></Sociais>
 		<div class="flex flex-col w-full"><slot /></div>
 	</main>
 
