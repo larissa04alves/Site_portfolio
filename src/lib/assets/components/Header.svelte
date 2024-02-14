@@ -26,6 +26,7 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 5px 70px 5px 70px;
+		z-index: 100;
 	}
 
 	.logo {

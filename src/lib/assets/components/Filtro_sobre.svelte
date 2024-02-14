@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	let selectedTab = 1;
 	let linePosition = 0;
 
@@ -9,7 +9,7 @@
 		{ id: 4, text: 'Certificados' }
 	];
 
-	function selectTab(tab) {
+	function selectTab(tab: number) {
 		selectedTab = tab;
 		linePosition = tab - 1;
 	}
@@ -18,16 +18,18 @@
 <div>
 	<ul class="tabs">
 		{#each tabs as { id, text }}
-			<li
-				class="tab {selectedTab === id ? 'selected' : ''}"
-				on:click={() => selectTab(id)}
-				on:mouseover={() => (linePosition = id - 1)}
-				on:mouseleave={() => (linePosition = selectedTab - 1)}
-			>
-				{text}
-				{#if selectedTab === id}
-					<div class={linePosition === id - 1 ? 'selected-tab-line' : ''}></div>
-				{/if}
+			<li class="tab {selectedTab === id ? 'selected' : ''}">
+				<button
+					on:click={() => selectTab(id)}
+					on:mouseover={() => (linePosition = id - 1)}
+					on:focus={() => (linePosition = id - 1)}
+					on:mouseleave={() => (linePosition = selectedTab - 1)}
+				>
+					{text}
+					{#if selectedTab === id}
+						<div class={linePosition === id - 1 ? 'selected-tab-line' : ''}></div>
+					{/if}
+				</button>
 			</li>
 		{/each}
 	</ul>
@@ -107,8 +109,5 @@
 		font-size: 20px;
 		line-height: 40px;
 		font-weight: 500;
-	}
-	.info {
-		font-weight: 200;
 	}
 </style>

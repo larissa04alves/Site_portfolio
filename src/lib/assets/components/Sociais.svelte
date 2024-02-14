@@ -30,11 +30,11 @@
 		gap: 1.25rem;
 	}
 	.logo {
-		width: 20px;
+		width: 30px;
 	}
 	.linha {
 		border-right: 1px solid #828282;
-		height: 200px;
+		height: 300px;
 		width: 50%;
 	}
 </style>

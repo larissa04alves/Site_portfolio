@@ -78,7 +78,7 @@
 		padding: 40px 120px 0 120px;
 	}
 	.minha_foto {
-		width: 600px;
+		width: 500px;
 		border-radius: 15px;
 	}
 	.texto_sobre {
