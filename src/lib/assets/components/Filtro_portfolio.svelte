@@ -1,5 +1,4 @@
 <script lang="ts">
-	import CardsProjetos from '$lib/assets/components/Cards_projetos.svelte';
 	import Cards_projetos from '$lib/assets/components/Cards_projetos.svelte';
 
 	let selectedTab = 1;
@@ -20,7 +19,8 @@
 			technologies: 'HTML/CSS',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut',
-			image: '/src/lib/assets/img/techstore.svg'
+			image: '/src/lib/assets/img/techstore.svg',
+			link: ''
 		},
 		{
 			id: 4,
@@ -29,7 +29,8 @@
 			technologies: 'Java, PostgreSQL, Java Swing',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut',
-			image: '/src/lib/assets/img/school.svg'
+			image: '/src/lib/assets/img/school.svg',
+			link: 'https://github.com/larissa04alves/Agenda_contatos.git'
 		},
 		{
 			id: 3,
@@ -38,7 +39,8 @@
 			technologies: 'Flutter, Dart',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut',
-			image: '/src/lib/assets/img/habbit.svg'
+			image: '/src/lib/assets/img/habbit.svg',
+			link: ''
 		},
 		{
 			id: 2,
@@ -47,7 +49,8 @@
 			technologies: 'Svelte, TypeScript',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut',
-			image: '/src/lib/assets/img/portfolio.svg'
+			image: '/src/lib/assets/img/portfolio.svg',
+			link: ''
 		}
 	];
 
@@ -82,9 +85,11 @@
 		{/each}
 	</ul>
 
-	{#each filterProjects(selectedTab === 1 ? null : tabs[selectedTab - 1].text) as project (project.id)}
-		<Cards_projetos {project} />
-	{/each}
+	<div class="card_section">
+		{#each filterProjects(selectedTab === 1 ? null : tabs[selectedTab - 1].text) as project (project.id)}
+			<Cards_projetos {project} />
+		{/each}
+	</div>
 </div>
 
 <style>
@@ -92,15 +97,16 @@
 		display: flex;
 		list-style: none;
 		position: relative;
-		font-size: 1.3rem;
+		font-size: 1.4rem;
 		font-weight: 600;
-		gap: 3rem;
+		gap: 4rem;
+		justify-content: center;
+		padding-top: 2rem;
 	}
 
 	.tab {
 		cursor: pointer;
-		padding: 0.6rem;
-		margin: 0 0.6rem;
+		padding: 0.6rem 1.5rem 0.6rem 1.5rem;
 		position: relative;
 		user-select: none;
 	}
@@ -122,6 +128,13 @@
 	.tab-content {
 		margin-top: 1.3rem;
 	}
+	.card_section {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 6rem;
+		padding-top: 3rem;
+	}
 
 	.title {
 		font-size: 1.3rem;
@@ -129,13 +142,10 @@
 		font-weight: 500;
 	}
 	.card-container {
-		width: 28rem;
-		height: 16rem;
-		position: relative;
+		width: 100%;
 		border-radius: 1rem;
 		box-shadow: 0 0.9rem 1.3rem rgba(0, 0, 0, 0.2);
 		overflow: hidden;
-		flex-direction: column;
 	}
 
 	.card {

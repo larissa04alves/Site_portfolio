@@ -3,10 +3,13 @@
 	import my_image from '$lib/assets/img/my_image.jpeg';
 	import Filtro_sobre from '$lib/assets/components/Filtro_sobre.svelte';
 	import Filtro_portfolio from '$lib/assets/components/Filtro_portfolio.svelte';
-	import CardsProjetos from '$lib/assets/components/Cards_projetos.svelte';
+	import Sociais from '$lib/assets/components/Sociais.svelte';
 </script>
 
 <section class="heroSection">
+	<div class="sociais">
+		<Sociais />
+	</div>
 	<div class="texto">
 		<h3 class="text-4xl font-semibold">Oi!</h3>
 		<h1 class="text-6xl font-semibold">Sou <span class="nameColor">Larissa Alves</span></h1>
@@ -45,7 +48,7 @@
 		</div>
 	</div>
 </section>
-<section class="portfolio">
+<section id="portfolio" class="portfolio">
 	<div class="texto_port">
 		<h1 class="titulo_port">Portfólio</h1>
 		<h3>Meus Projetos Recentes</h3>
@@ -58,9 +61,9 @@
 <style>
 	.heroSection {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 		width: 100%;
-		padding: 6rem 7rem 6rem 0;
+		padding: 6rem 8rem 6rem 0;
 	}
 	.texto {
 		padding: 7rem 2rem 0;
@@ -81,6 +84,13 @@
 		position: absolute;
 		left: 10rem;
 	}
+	.sociais {
+		display: flex;
+		justify-content: flex-end;
+		right: 0;
+		top: 0;
+		padding: 2rem;
+	}
 	.sobre {
 		display: flex;
 		width: 100%;
@@ -88,9 +98,11 @@
 		background-color: #3a3a3a;
 		padding: 1.5rem 8rem 0 8rem;
 	}
+
+	/* ARRUMAR */
 	.minha_foto {
 		border-radius: 1rem;
-		width: 35rem;
+		width: 40rem;
 		height: 95%;
 	}
 	.texto_sobre {
@@ -113,15 +125,14 @@
 	}
 
 	.portfólio {
-		display: flex;
 		width: 100%;
+		height: 100%;
+		padding: 10px 0 0 0;
 	}
 	.texto_port {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 100%;
-		height: 100%;
 		font-weight: 600;
 	}
 	.titulo_port {
@@ -132,6 +143,7 @@
 	}
 	.cards {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
+		padding-bottom: 4rem;
 	}
 </style>

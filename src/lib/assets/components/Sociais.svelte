@@ -11,30 +11,16 @@
 		<img class="logo" src={logo_instagram} alt="Logo" />
 		<img class="logo" src={logo_linkedin} alt="Logo" />
 		<img class="logo" src={logo_GiHub} alt="Logo" />
-		<div class="linha"></div>
 	</div>
 </section>
 
 <style>
-	section {
-		display: flex;
-		height: 100%;
-		justify-content: flex-end;
-		align-items: flex-end;
-		position: absolute;
-	}
 	.logos {
 		display: flex;
 		flex-direction: column;
-		padding: 0 3rem;
 		gap: 1.25rem;
 	}
 	.logo {
 		width: 2rem;
-	}
-	.linha {
-		border-right: 0.06rem solid #828282;
-		height: 12.5rem;
-		width: 50%;
 	}
 </style>

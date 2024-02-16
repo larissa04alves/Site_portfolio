@@ -1,4 +1,5 @@
 <script lang="ts">
+	import link from '$lib/assets/img/link.svg';
 	export let project;
 </script>
 
@@ -13,6 +14,13 @@
 			<p class="heading">{project.title}</p>
 			<p>{project.description}</p>
 			<p class="texto_tec">Tecnologias usadas: {project.technologies}</p>
+			<div>
+				<a href={project.link}>
+					<button>
+						<img class="link_img" src={link} alt="link" />
+					</button>
+				</a>
+			</div>
 		</div>
 	</div>
 </div>
@@ -25,7 +33,6 @@
 		border-radius: 1rem;
 		box-shadow: 0 0.9rem 1.3rem rgba(0, 0, 0, 0.2);
 		overflow: hidden;
-		flex-direction: column;
 	}
 
 	.card {
@@ -99,5 +106,10 @@
 
 	.card:hover .front-content p {
 		opacity: 0;
+	}
+	.link_img {
+		position: relative;
+		width: 3rem;
+		height: 3rem;
 	}
 </style>

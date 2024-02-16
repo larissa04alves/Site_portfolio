@@ -3,6 +3,7 @@
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import Header from '$lib/assets/components/Header.svelte';
+	import Footer from '$lib/assets/components/Footer.svelte';
 
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
@@ -12,17 +13,14 @@
 </script>
 
 <AppShell>
-	<Header></Header>
+	<Header />
 	<!-- (sidebarLeft) -->
 
 	<!-- (sidebarRight) -->
 	<!-- (pageHeader) -->
 	<!-- Router Slot -->
-	<main class="flex h-full w-full">
-		<Sociais></Sociais>
-		<div class="flex flex-col w-full"><slot /></div>
-	</main>
+	<slot />
 
-	<!-- ---- / ---- -->
 	<!-- (footer) -->
+	<Footer />
 </AppShell>

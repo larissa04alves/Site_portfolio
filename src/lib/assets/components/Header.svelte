@@ -10,7 +10,7 @@
 	<nav class="links">
 		<a class="animado" href="/" on:click={handleClick}>Home</a>
 		<a class="animado" href="#sobre" on:click={handleClick}>Sobre</a>
-		<a class="animado" href="#" on:click={handleClick}>Portfólio</a>
+		<a class="animado" href="#portfolio" on:click={handleClick}>Portfólio</a>
 	</nav>
 	<a href="/contato">
 		<button class="btn"> Contato </button>
