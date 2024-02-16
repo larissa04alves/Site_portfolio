@@ -18,23 +18,19 @@
 <div>
 	<ul class="tabs">
 		{#each tabs as { id, text }}
-			<li class="tab {selectedTab === id ? 'selected' : ''}">
-				<button
-					on:click={() => selectTab(id)}
-					on:mouseover={() => (linePosition = id - 1)}
-					on:focus={() => (linePosition = id - 1)}
-					on:mouseleave={() => (linePosition = selectedTab - 1)}
-				>
-					{text}
-					{#if selectedTab === id}
-						<div class={linePosition === id - 1 ? 'selected-tab-line' : ''}></div>
-					{/if}
-				</button>
+			<li
+				class="tab {selectedTab === id ? 'selected' : ''}"
+				on:click={() => selectTab(id)}
+				on:mouseover={() => (linePosition = id - 1)}
+				on:mouseleave={() => (linePosition = selectedTab - 1)}
+			>
+				{text}
+				{#if selectedTab === id}
+					<div class={linePosition === id - 1 ? 'selected-tab-line' : ''}></div>
+				{/if}
 			</li>
 		{/each}
 	</ul>
-
-	<div class="line"></div>
 
 	{#if selectedTab == 1}
 		<div class="tab-content">
@@ -74,27 +70,27 @@
 		display: flex;
 		list-style: none;
 		position: relative;
-		font-size: 20px;
+		font-size: 1.3rem;
 		font-weight: 600;
-		gap: 40px;
+		gap: 3rem;
 	}
 
 	.tab {
 		cursor: pointer;
-		padding: 10px;
-		margin: 0 10px;
+		padding: 0.6rem;
+		margin: 0 0.6rem;
 		position: relative;
 		user-select: none;
 	}
 
 	.tab:hover {
-		border-bottom: 4px solid #8c4de5;
-		border-radius: 1px;
+		border-bottom: 0.3rem solid #8c4de5;
+		border-radius: 0.06rem;
 	}
 
 	.tab.selected {
-		border-bottom: 4px solid #8c4de5;
-		border-radius: 1px;
+		border-bottom: 0.3rem solid #8c4de5;
+		border-radius: 0.06rem;
 	}
 
 	.selected-tab-line {
@@ -102,12 +98,12 @@
 	}
 
 	.tab-content {
-		margin-top: 20px;
+		margin-top: 1.3rem;
 	}
 
 	.title {
-		font-size: 20px;
-		line-height: 40px;
+		font-size: 1.3rem;
+		line-height: 3rem;
 		font-weight: 500;
 	}
 </style>

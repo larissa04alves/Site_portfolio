@@ -26,15 +26,15 @@
 	.logos {
 		display: flex;
 		flex-direction: column;
-		padding: 0 40px;
+		padding: 0 3rem;
 		gap: 1.25rem;
 	}
 	.logo {
-		width: 30px;
+		width: 2rem;
 	}
 	.linha {
-		border-right: 1px solid #828282;
-		height: 300px;
+		border-right: 0.06rem solid #828282;
+		height: 12.5rem;
 		width: 50%;
 	}
 </style>
