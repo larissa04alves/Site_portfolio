@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import Cards_projetos from '$lib/assets/components/Cards_projetos.svelte';
 
 	let selectedTab = 1;
@@ -220,4 +220,4 @@
 	.card:hover .front-content p {
 		opacity: 0;
 	}
-</style>
+</style> -->

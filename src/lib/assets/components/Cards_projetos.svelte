@@ -1,6 +1,6 @@
 <script lang="ts">
 	import link from '$lib/assets/img/link.svg';
-	export let project;
+	export let project: any;
 </script>
 
 <div class="card-container">

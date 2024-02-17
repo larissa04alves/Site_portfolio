@@ -3,14 +3,14 @@
 </script>
 
 <header class="geral">
-	<a href="/">
-		<img class="logo" src={logo} alt="Logo" />
+	<a href="/" class="min-w-20">
+		<img class="logo min-w-20" src={logo} alt="Logo" />
 	</a>
 
 	<nav class="links">
-		<a class="animado" href="/" on:click={handleClick}>Home</a>
-		<a class="animado" href="#sobre" on:click={handleClick}>Sobre</a>
-		<a class="animado" href="#portfolio" on:click={handleClick}>Portfólio</a>
+		<a class="animado" href="/">Home</a>
+		<a class="animado" href="#sobre">Sobre</a>
+		<a class="animado" href="#portfolio">Portfólio</a>
 	</nav>
 	<a href="/contato">
 		<button class="btn"> Contato </button>

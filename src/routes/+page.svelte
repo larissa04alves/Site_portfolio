@@ -27,9 +27,7 @@
 </section>
 
 <section id="sobre" class="sobre">
-	<div>
-		<img class="minha_foto" src={my_image} alt="minha foto" />
-	</div>
+	<img class="hidden md:flex minha_foto" src={my_image} alt="minha foto" />
 
 	<div class="texto_sobre">
 		<h1 class="titulo">Sobre mim</h1>
@@ -96,19 +94,16 @@
 		width: 100%;
 		height: 35rem;
 		background-color: #3a3a3a;
-		padding: 1.5rem 8rem 0 8rem;
+		padding: 1.5rem 8rem;
 	}
 
-	/* ARRUMAR */
 	.minha_foto {
 		border-radius: 1rem;
-		width: 40rem;
-		height: 95%;
 	}
 	.texto_sobre {
 		display: flex;
 		flex-direction: column;
-		padding-left: 4rem;
+		padding-left: 3rem;
 	}
 	.titulo {
 		font-size: 2.5rem;
