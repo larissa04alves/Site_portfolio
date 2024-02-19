@@ -1,21 +1,21 @@
-<script lang="ts">
+<script>
+	import habbit from '$lib/assets/img/habbit.svg';
 	import link from '$lib/assets/img/link.svg';
-	export let project: any;
 </script>
 
 <div class="card-container">
 	<div class="card">
-		<img src={project.image} alt={project.title} />
+		<img src={habbit} alt="image" />
 		<div class="front-content">
-			<h1>{project.title}</h1>
-			<h2 class="texto">{project.category}</h2>
+			<h1>Habbit Tracker</h1>
+			<h2 class="texto">Android App</h2>
 		</div>
 		<div class="content">
-			<p class="heading">{project.title}</p>
-			<p>{project.description}</p>
-			<p class="texto_tec">Tecnologias usadas: {project.technologies}</p>
+			<p class="heading">Habbit Tracker</p>
+			<p>Aplicativo mobile com o objetivo de ajudar na organização de tarefas diárias</p>
+			<p class="texto_tec">Tecnologias usadas: Flutter e Dart</p>
 			<div>
-				<a href={project.link}>
+				<a href="#">
 					<button>
 						<img class="link_img" src={link} alt="link" />
 					</button>

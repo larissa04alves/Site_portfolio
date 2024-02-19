@@ -4,7 +4,7 @@
 </script>
 
 <TabGroup
-	justify="justify-evenly"
+	justify="justify-start"
 	rounded="none"
 	hover="hover:none"
 	active="border-b-4 border-primary-500"

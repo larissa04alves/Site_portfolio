@@ -1,8 +1,8 @@
 <script>
 	import personagem from '$lib/assets/img/personagem.svg';
 	import my_image from '$lib/assets/img/my_image.jpeg';
-	import Filtro_sobre from '$lib/assets/components/Filtro_sobre.svelte';
-	import Filtro_portfolio from '$lib/assets/components/Filtro_portfolio.svelte';
+	import FiltroSobre from '$lib/assets/components/FiltroSobre.svelte';
+	import Filtro_portfolio from '$lib/assets/components/FiltroPortfolio.svelte';
 	import Sociais from '$lib/assets/components/Sociais.svelte';
 </script>
 
@@ -42,7 +42,7 @@
 			qui officia deserunt mollit anim id est laborum
 		</p>
 		<div class="filtro">
-			<Filtro_sobre />
+			<FiltroSobre />
 		</div>
 	</div>
 </section>
@@ -122,7 +122,6 @@
 	.portfólio {
 		width: 100%;
 		height: 100%;
-		padding: 10px 0 0 0;
 	}
 	.texto_port {
 		display: flex;

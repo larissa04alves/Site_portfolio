@@ -7,10 +7,19 @@
 
 <section>
 	<div class="logos">
-		<img class="logo" src={logo_X} alt="Logo" />
-		<img class="logo" src={logo_instagram} alt="Logo" />
-		<img class="logo" src={logo_linkedin} alt="Logo" />
-		<img class="logo" src={logo_GiHub} alt="Logo" />
+		<a target="_blank" href="https://x.com/_Lari_alvess?t=99Cv58aJzrQao2cahTrOaQ&s=09">
+			<img class="logo" src={logo_X} alt="Logo" />
+		</a>
+
+		<a target="_blank" href="https://www.instagram.com/_alvesslari?igsh=MXZtaHRlcThhYThmaA==">
+			<img class="logo" src={logo_instagram} alt="Logo" />
+		</a>
+		<a target="_blank" href="https://www.linkedin.com/in/larissa-alves-069944286/">
+			<img class="logo" src={logo_linkedin} alt="Logo" />
+		</a>
+		<a target="_blank" href="https://github.com/larissa04alves">
+			<img class="logo" src={logo_GiHub} alt="Logo" />
+		</a>
 	</div>
 </section>
 
