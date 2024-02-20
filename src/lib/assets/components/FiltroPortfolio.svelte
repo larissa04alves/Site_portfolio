@@ -9,12 +9,12 @@
 </script>
 
 <TabGroup
-	justify="justify-between"
+	justify="justify-around"
 	rounded="none"
 	hover="hover:none"
 	active="border-b-4 border-primary-500"
 	regionList="border-b-0 "
-	regionPanel="border-none"
+	regionPanel="border-none "
 >
 	<Tab regionTab="font-semibold text-xl" bind:group={tabSet} name="tab1" value={0}>Todos</Tab>
 	<Tab regionTab="font-semibold text-xl" bind:group={tabSet} name="tab2" value={1}>Web</Tab>
@@ -23,13 +23,21 @@
 	<!-- Tab Panels --->
 	<svelte:fragment slot="panel">
 		{#if tabSet === 0}
-			<Project1 />
-			<Project2 />
-			<Project3 />
-			<Project4 />
+			<div class="flex w-full gap-10">
+				<div class="flex flex-col gap-10">
+					<Project1 />
+					<Project2 />
+				</div>
+				<div class="flex flex-col gap-10">
+					<Project3 />
+					<Project4 />
+				</div>
+			</div>
 		{:else if tabSet === 1}
-			<Project1 />
-			<Project4 />
+			<div class="flex gap-10">
+				<Project1 />
+				<Project4 />
+			</div>
 		{:else if tabSet === 2}
 			<Project3 />
 		{:else if tabSet === 3}

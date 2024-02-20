@@ -4,21 +4,24 @@
 </script>
 
 <div class="card-container">
-	<div class="card">
-		<img src={techstore} alt="image" />
-		<div class="front-content">
-			<h1>Tech Store</h1>
-			<h2 class="texto">Website</h2>
+	<a href="">
+		<div class="card">
+			<!-- svelte-ignore a11y-img-redundant-alt -->
+			<img src={techstore} alt="image" />
+			<div class="front-content">
+				<h1>Tech Store</h1>
+				<h2 class="texto">Website</h2>
+			</div>
+			<div class="content">
+				<p class="heading">Tech Store</p>
+				<p>Site criado com o propósito de treinar conceitos de desenvolvimento web</p>
+				<p class="texto_tec">Tecnologias usadas: HTML e CSS</p>
+				<a class="btn" href="https://calendar.google.com/calendar/u/0/r?pli=1">
+					<img class="link_img" src={link} alt="link" />
+				</a>
+			</div>
 		</div>
-		<div class="content">
-			<p class="heading">Tech Store</p>
-			<p>Site criado com o propósito de treinar conceitos de desenvolvimento web</p>
-			<p class="texto_tec">Tecnologias usadas: HTML e CSS</p>
-			<a href="">
-				<img class="link_img" src={link} alt="link" />
-			</a>
-		</div>
-	</div>
+	</a>
 </div>
 
 <style>

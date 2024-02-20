@@ -84,10 +84,8 @@
 	}
 	.sociais {
 		display: flex;
-		justify-content: flex-end;
-		right: 0;
-		top: 0;
-		padding: 2rem;
+		align-self: center;
+		padding: 0 2rem;
 	}
 	.sobre {
 		display: flex;
@@ -119,10 +117,6 @@
 		margin-top: 1.5rem;
 	}
 
-	.portfólio {
-		width: 100%;
-		height: 100%;
-	}
 	.texto_port {
 		display: flex;
 		flex-direction: column;

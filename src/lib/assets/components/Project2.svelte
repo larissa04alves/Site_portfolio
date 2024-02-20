@@ -1,27 +1,22 @@
 <script>
 	import school from '$lib/assets/img/school.svg';
-	import link from '$lib/assets/img/link.svg';
 </script>
 
 <div class="card-container">
-	<div class="card">
-		<img src={school} alt="image" />
-		<div class="front-content">
-			<h1>School System</h1>
-			<h2 class="texto">Java Application</h2>
+	<a target="_blank" href="https://github.com/larissa04alves/Plataforma_cursos.git">
+		<div class="card">
+			<img src={school} alt="image" />
+			<div class="front-content">
+				<h1>School System</h1>
+				<h2 class="texto">Java Application</h2>
+			</div>
+			<div class="content">
+				<p class="heading">School System</p>
+				<p>Aplicação com o objetivo de organizar e administrar uma escola de cursos online</p>
+				<p class="texto_tec">Tecnologias usadas: Java, Java Swing, PostgreSQL</p>
+			</div>
 		</div>
-		<div class="content">
-			<p class="heading">School System</p>
-			<p>Aplicação com o objetivo de organizar e administrar uma escola de cursos online</p>
-			<p class="texto_tec">Tecnologias usadas: Java, Java Swing, PostgreSQL</p>
-
-			<a href="#">
-				<button>
-					<img class="link_img" src={link} alt="link" />
-				</button>
-			</a>
-		</div>
-	</div>
+	</a>
 </div>
 
 <style>
