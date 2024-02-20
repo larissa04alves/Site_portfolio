@@ -122,12 +122,13 @@
 		flex-direction: column;
 		align-items: center;
 		font-weight: 600;
+		padding: 2rem;
 	}
 	.titulo_port {
 		font-size: 2.5rem;
 		line-height: normal;
 		font-weight: 500;
-		padding: 4rem 0 0.3rem 0;
+		padding-top: 2rem;
 	}
 	.cards {
 		display: flex;

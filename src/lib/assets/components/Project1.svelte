@@ -16,9 +16,6 @@
 				<p class="heading">Tech Store</p>
 				<p>Site criado com o propósito de treinar conceitos de desenvolvimento web</p>
 				<p class="texto_tec">Tecnologias usadas: HTML e CSS</p>
-				<a class="btn" href="https://calendar.google.com/calendar/u/0/r?pli=1">
-					<img class="link_img" src={link} alt="link" />
-				</a>
 			</div>
 		</div>
 	</a>

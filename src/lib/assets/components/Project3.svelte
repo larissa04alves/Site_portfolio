@@ -1,10 +1,10 @@
 <script>
 	import habbit from '$lib/assets/img/habbit.svg';
-	import link from '$lib/assets/img/link.svg';
 </script>
 
 <div class="card-container">
 	<div class="card">
+		<!-- svelte-ignore a11y-img-redundant-alt -->
 		<img src={habbit} alt="image" />
 		<div class="front-content">
 			<h1>Habbit Tracker</h1>
@@ -14,13 +14,6 @@
 			<p class="heading">Habbit Tracker</p>
 			<p>Aplicativo mobile com o objetivo de ajudar na organização de tarefas diárias</p>
 			<p class="texto_tec">Tecnologias usadas: Flutter e Dart</p>
-			<div>
-				<a href="#">
-					<button>
-						<img class="link_img" src={link} alt="link" />
-					</button>
-				</a>
-			</div>
 		</div>
 	</div>
 </div>

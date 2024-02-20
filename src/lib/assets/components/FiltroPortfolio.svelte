@@ -9,17 +9,19 @@
 </script>
 
 <TabGroup
-	justify="justify-around"
+	justify="justify-center"
 	rounded="none"
 	hover="hover:none"
 	active="border-b-4 border-primary-500"
 	regionList="border-b-0 "
-	regionPanel="border-none "
+	regionPanel="border-none  "
+	padding="px-10 py-2"
+	class="flex flex-col justify-center items-center"
 >
-	<Tab regionTab="font-semibold text-xl" bind:group={tabSet} name="tab1" value={0}>Todos</Tab>
-	<Tab regionTab="font-semibold text-xl" bind:group={tabSet} name="tab2" value={1}>Web</Tab>
-	<Tab regionTab="font-semibold text-xl" bind:group={tabSet} name="tab3" value={2}>Mobile</Tab>
-	<Tab regionTab="font-semibold text-xl" bind:group={tabSet} name="tab3" value={3}>Outros</Tab>
+	<Tab regionTab="font-bold text-xl" bind:group={tabSet} name="tab1" value={0}>Todos</Tab>
+	<Tab regionTab="font-bold text-xl" bind:group={tabSet} name="tab2" value={1}>Web</Tab>
+	<Tab regionTab="font-bold text-xl" bind:group={tabSet} name="tab3" value={2}>Mobile</Tab>
+	<Tab regionTab="font-bold text-xl" bind:group={tabSet} name="tab3" value={3}>Outros</Tab>
 	<!-- Tab Panels --->
 	<svelte:fragment slot="panel">
 		{#if tabSet === 0}

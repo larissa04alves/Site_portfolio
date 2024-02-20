@@ -1,28 +1,23 @@
 <script>
 	import portfolio from '$lib/assets/img/portfolio.svg';
-	import link from '$lib/assets/img/link.svg';
 </script>
 
 <div class="card-container">
-	<div class="card">
-		<img src={portfolio} alt="image" />
-		<div class="front-content">
-			<h1>Personal Portfólio</h1>
-			<h2 class="texto">Website</h2>
-		</div>
-		<div class="content">
-			<p class="heading">Personal Portfólio</p>
-			<p>Site desenvolvido para ser meu portfólio pessoal</p>
-			<p class="texto_tec">Tecnologias usadas: Svelte, CSS, TypeScript</p>
-			<div>
-				<a href="#">
-					<button>
-						<img class="link_img" src={link} alt="link" />
-					</button>
-				</a>
+	<a href="https://github.com/larissa04alves/Site_portfolio">
+		<div class="card">
+			<!-- svelte-ignore a11y-img-redundant-alt -->
+			<img src={portfolio} alt="image" />
+			<div class="front-content">
+				<h1>Personal Portfólio</h1>
+				<h2 class="texto">Website</h2>
+			</div>
+			<div class="content">
+				<p class="heading">Personal Portfólio</p>
+				<p>Site desenvolvido para ser meu portfólio pessoal</p>
+				<p class="texto_tec">Tecnologias usadas: Svelte, CSS, TypeScript</p>
 			</div>
 		</div>
-	</div>
+	</a>
 </div>
 
 <style>
