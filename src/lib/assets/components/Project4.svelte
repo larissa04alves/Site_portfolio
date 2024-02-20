@@ -3,7 +3,7 @@
 </script>
 
 <div class="card-container">
-	<a href="https://github.com/larissa04alves/Site_portfolio">
+	<a href="https://portfolio-nine-eta-92.vercel.app/">
 		<div class="card">
 			<!-- svelte-ignore a11y-img-redundant-alt -->
 			<img src={portfolio} alt="image" />

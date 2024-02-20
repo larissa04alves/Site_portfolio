@@ -4,7 +4,12 @@
 	import FiltroSobre from '$lib/assets/components/FiltroSobre.svelte';
 	import Filtro_portfolio from '$lib/assets/components/FiltroPortfolio.svelte';
 	import Sociais from '$lib/assets/components/Sociais.svelte';
+	import favicon from '$lib/assets/img/favicon.svg';
 </script>
+
+<head>
+	<link rel="icon" href={favicon} />
+</head>
 
 <section class="heroSection">
 	<div class="sociais">

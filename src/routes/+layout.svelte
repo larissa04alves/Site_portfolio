@@ -11,14 +11,12 @@
 </script>
 
 <AppShell>
-	<Header />
 	<!-- (sidebarLeft) -->
-
 	<!-- (sidebarRight) -->
-	<!-- (pageHeader) -->
+	<Header />
 	<!-- Router Slot -->
 	<slot />
-
-	<!-- (footer) -->
+	<!-- ---- / ---- -->
+	<!-- (pageFooter) -->
 	<Footer />
 </AppShell>

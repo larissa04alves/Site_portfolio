@@ -4,7 +4,7 @@
 </script>
 
 <div class="card-container">
-	<a href="">
+	<a href="https://tech-store-eta-eight.vercel.app/">
 		<div class="card">
 			<!-- svelte-ignore a11y-img-redundant-alt -->
 			<img src={techstore} alt="image" />
