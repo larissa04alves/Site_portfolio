@@ -5,7 +5,7 @@
 
 <div class="card-container">
 	<a href="https://tech-store-eta-eight.vercel.app/">
-		<div class="card">
+		<div class="card w-full h-full">
 			<!-- svelte-ignore a11y-img-redundant-alt -->
 			<img src={techstore} alt="image" />
 			<div class="front-content">

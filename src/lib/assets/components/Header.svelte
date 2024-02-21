@@ -2,49 +2,28 @@
 	import logo from '$lib/assets/img/logo.svg';
 </script>
 
-<header class="geral">
+<header
+	class="px-[0.2rem] flex justify-around lg:fixed bg-surface-900 w-full items-center py-[0.4rem] z-50 shadow-md shadow-secondary-800"
+>
 	<a href="/" class="min-w-20">
-		<img class="logo min-w-20" src={logo} alt="Logo" />
+		<img class="w-[7rem] lg:w-[9.6rem] min-w-20" src={logo} alt="Logo" />
 	</a>
 
-	<nav class="links">
-		<a class="animado" href="/">Home</a>
-		<a class="animado" href="#sobre">Sobre</a>
-		<a class="animado" href="#portfolio">Portfólio</a>
+	<nav class="hidden lg:flex gap-12 font-semibold text-base">
+		<a class="animado relative no-underline" href="/">Home</a>
+		<a class="animado relative no-underline" href="#sobre">Sobre</a>
+		<a class="animado relative no-underline" href="#portfolio">Portfólio</a>
 	</nav>
 	<a href="/contato">
-		<button class="btn"> Contato </button>
+		<button
+			class=" btn border-2 border-primary-600 rounded-[0.8rem] py-[0.3rem] px-[1.6rem] decoration-secundary-100 font-semibold"
+		>
+			Contato
+		</button>
 	</a>
 </header>
 
 <style>
-	.geral {
-		position: fixed;
-		box-shadow: 0 0 0.5rem #3f1397;
-		background-color: #151515;
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 0.3rem 4.3rem 0.3rem 4.3rem;
-		z-index: 100;
-	}
-
-	.logo {
-		width: 9.3rem;
-	}
-
-	.links {
-		display: flex;
-		gap: 3.75rem;
-		font-weight: 600;
-		font-size: 1rem;
-	}
-
-	.animado {
-		position: relative;
-		text-decoration: none;
-	}
 	.animado::before {
 		content: '';
 		position: absolute;
@@ -67,38 +46,8 @@
 		transform: scaleX(1);
 	}
 
-	.btn {
-		border: 0.06rem solid #a666ff;
-		border-radius: 0.8rem;
-		padding: 0.3rem 1.6rem;
-		color: #e1cdfe;
-		font-weight: 600;
-	}
-
 	.btn:hover {
 		background-color: #3f1397;
 		border: 0.06rem solid #3f1397;
-	}
-
-	/* Media query for smaller devices */
-	@media only screen and (max-width: 500px) {
-		.geral {
-			display: flex;
-			justify-content: space-around;
-		}
-
-		.links {
-			display: none;
-			flex-direction: column;
-			position: absolute;
-			top: 4rem;
-			width: 50%;
-			background-color: #3f1397;
-			box-shadow: 0 0 0.5rem #3f1397;
-			z-index: 99;
-		}
-		.logo {
-			display: none;
-		}
 	}
 </style>

@@ -4,7 +4,7 @@
 
 <div class="card-container">
 	<a href="https://portfolio-nine-eta-92.vercel.app/">
-		<div class="card">
+		<div class="card w-full h-full">
 			<!-- svelte-ignore a11y-img-redundant-alt -->
 			<img src={portfolio} alt="image" />
 			<div class="front-content">
@@ -31,8 +31,6 @@
 	}
 
 	.card {
-		width: 100%;
-		height: 100%;
 		border-radius: inherit;
 	}
 

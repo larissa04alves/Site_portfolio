@@ -4,7 +4,7 @@
 
 <div class="card-container">
 	<a target="_blank" href="https://github.com/larissa04alves/Plataforma_cursos.git">
-		<div class="card">
+		<div class="card w-full h-full">
 			<img src={school} alt="image" />
 			<div class="front-content">
 				<h1>School System</h1>

@@ -3,7 +3,7 @@
 </script>
 
 <div class="card-container">
-	<div class="card">
+	<div class="card w-full h-full">
 		<!-- svelte-ignore a11y-img-redundant-alt -->
 		<img src={habbit} alt="image" />
 		<div class="front-content">

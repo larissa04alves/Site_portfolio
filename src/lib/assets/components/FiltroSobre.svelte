@@ -19,38 +19,24 @@
 	<!-- Tab Panels --->
 	<svelte:fragment slot="panel">
 		{#if tabSet === 0}
-			<h1 class="title">Backend Development</h1>
-			<p class="info">Java, Python, Dart, PostgreSQL</p>
-			<h1 class="title">Frontend Development</h1>
-			<p class="info">Svelte, HTML/CSS</p>
-			<h1 class="title">Mobile Development</h1>
-			<p class="info">Flutter</p>
+			<h1 class="text-xl">Backend Development</h1>
+			<p>Java, Python, Dart, PostgreSQL</p>
+			<h1 class="text-xl">Frontend Development</h1>
+			<p>Svelte, HTML/CSS</p>
+			<h1 class="text-xl">Mobile Development</h1>
+			<p>Flutter</p>
 		{:else if tabSet === 1}
-			<h1 class="title">Assistente de Dados</h1>
-			<h1 class="info">out/2023 - atualmente</h1>
-			<p class="info">UNIVATES</p>
+			<h1 class="text-xl">Assistente de Dados</h1>
+			<h1>out/2023 - atualmente</h1>
+			<p>UNIVATES</p>
 		{:else if tabSet === 2}
-			<h1 class="title">Engenharia de Software</h1>
-			<h1 class="info">2023 - atualmente</h1>
-			<p class="info">UNIVATES</p>
+			<h1 class="text-xl">Engenharia de Software</h1>
+			<h1>2023 - atualmente</h1>
+			<p>UNIVATES</p>
 		{:else if tabSet === 3}
-			<h1 class="title">Power BI - Básico ao Avançado</h1>
-			<h1 class="info">jan/2023</h1>
-			<p class="info">Udemy</p>
+			<h1 class="text-xl">Power BI - Básico ao Avançado</h1>
+			<h1>jan/2023</h1>
+			<p>Udemy</p>
 		{/if}
 	</svelte:fragment>
 </TabGroup>
-
-<style>
-	.tabs {
-		font-size: 1.3rem;
-		line-height: 3rem;
-		font-weight: 700;
-	}
-
-	.title {
-		font-size: 1.3rem;
-		line-height: 3rem;
-		font-weight: 500;
-	}
-</style>
