@@ -19,22 +19,22 @@
 	<!-- Tab Panels --->
 	<svelte:fragment slot="panel">
 		{#if tabSet === 0}
-			<h1 class="text-xl">Backend Development</h1>
+			<h1 class="text-xl font-semibold">Backend Development</h1>
 			<p>Java, Python, Dart, PostgreSQL</p>
-			<h1 class="text-xl">Frontend Development</h1>
+			<h1 class="text-xl font-semibold">Frontend Development</h1>
 			<p>Svelte, HTML/CSS</p>
-			<h1 class="text-xl">Mobile Development</h1>
+			<h1 class="text-xl font-semibold">Mobile Development</h1>
 			<p>Flutter</p>
 		{:else if tabSet === 1}
-			<h1 class="text-xl">Assistente de Dados</h1>
+			<h1 class="text-xl font-semibold">Assistente de Dados</h1>
 			<h1>out/2023 - atualmente</h1>
 			<p>UNIVATES</p>
 		{:else if tabSet === 2}
-			<h1 class="text-xl">Engenharia de Software</h1>
+			<h1 class="text-xl font-semibold">Engenharia de Software</h1>
 			<h1>2023 - atualmente</h1>
 			<p>UNIVATES</p>
 		{:else if tabSet === 3}
-			<h1 class="text-xl">Power BI - Básico ao Avançado</h1>
+			<h1 class="text-xl font-semibold">Power BI - Básico ao Avançado</h1>
 			<h1>jan/2023</h1>
 			<p>Udemy</p>
 		{/if}

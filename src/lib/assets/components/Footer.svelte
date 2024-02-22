@@ -5,59 +5,25 @@
 	import logo_GiHub from '$lib/assets/img/logo_GiHub.svg';
 </script>
 
-<section>
-	<div class="logos">
+<section class="flex justify-center items-center flex-col w-full h-[12rem] bg-tertiary-500">
+	<div class="flex pb-[1rem] items-center gap-[1.25rem]">
 		<a target="_blank" href="https://x.com/_Lari_alvess?t=99Cv58aJzrQao2cahTrOaQ&s=09">
-			<img class="logo" src={logo_X} alt="Logo" />
+			<img src={logo_X} alt="Logo" />
 		</a>
 
 		<a target="_blank" href="https://www.instagram.com/_alvesslari?igsh=MXZtaHRlcThhYThmaA==">
-			<img class="logo" src={logo_instagram} alt="Logo" />
+			<img src={logo_instagram} alt="Logo" />
 		</a>
 		<a target="_blank" href="https://www.linkedin.com/in/larissa-alves-069944286/">
-			<img class="logo" src={logo_linkedin} alt="Logo" />
+			<img src={logo_linkedin} alt="Logo" />
 		</a>
 		<a target="_blank" href="https://github.com/larissa04alves">
-			<img class="logo" src={logo_GiHub} alt="Logo" />
+			<img src={logo_GiHub} alt="Logo" />
 		</a>
 	</div>
-	<div class="linha"></div>
-	<div class="texto">
-		<h1>Made by <span class="name">Larissa Alves</span></h1>
+	<div class="w-[60%] border-b-[0.06rem] border-white"></div>
+	<div class="flex flex-col items-center gap-[0.1rem] pt-[1rem]">
+		<h1>Made by <span class="font-semibold text-xl">Larissa Alves</span></h1>
 		<p>&copy; 2023 Larissa Alves. All rights reserved</p>
 	</div>
 </section>
-
-<style>
-	section {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		width: 100%;
-		height: 12rem;
-		background-color: #3a3a3a;
-	}
-	.logos {
-		display: flex;
-		padding-bottom: 1rem;
-		align-items: center;
-		gap: 1.25rem;
-	}
-
-	.texto {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 0.1rem;
-		padding-top: 1rem;
-	}
-	.name {
-		font-weight: 600;
-		font-size: 1.2rem;
-	}
-	.linha {
-		width: 60%;
-		border-bottom: 1px solid #ffffff;
-	}
-</style>

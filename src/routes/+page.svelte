@@ -11,27 +11,25 @@
 	<link rel="icon" href={favicon} />
 </head>
 
-<section
-	class=" md:flex justify-between py-[1rem] lg:flex justify-between w-full py-[10rem] pr-[12rem]"
->
-	<div class="md:flex hidden lg:flex items-center px-[2rem]">
+<section class=" flex justify-between w-full py-[10rem] pr-[12rem]">
+	<div class="flex items-center px-[2rem]">
 		<Sociais />
 	</div>
-	<div class="lg:relative lg:py-[7rem] px-[2rem]">
+	<div class="relative py-[7rem] px-[2rem]">
 		<h3 class="text-5xl font-semibold">Oi!</h3>
-		<h1 class="md:font-semibold text-6xl lg:text-7xl font-semibold">
+		<h1 class="text-7xl font-semibold">
 			Sou <span
 				class="font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-purple-800 to-purple-600"
 				>Larissa Alves</span
 			>
 		</h1>
-		<h2 class="md:font-semibold text-5xl lg:text-6xl font-semibold">Software Developer</h2>
+		<h2 class="text-6xl font-semibold">Software Developer</h2>
 		<a
 			target="_blank"
 			href="https://drive.google.com/file/d/1cL3zs477zX99xxtpi3qUZFjSej4Ktw9c/view?usp=sharing"
 		>
 			<button
-				class="md:flex sticky rounded-[0.8rem] py-[0.rem] px-[1.2rem] bg-gradient-to-b from-purple-400 via-purple-700 to-purple-800 font-semibold lg:flex absolute left-[12rem] items-center rounded-[0.8rem] py-[0.7rem] px-[1.2rem] bg-gradient-to-b from-purple-400 via-purple-700 to-purple-800 font-semibold text-xl mt-6 mb-20"
+				class="flex absolute left-[12rem] items-center rounded-[0.8rem] py-[0.7rem] px-[1.2rem] bg-gradient-to-b from-purple-400 via-purple-700 to-purple-800 font-semibold text-xl mt-6 mb-20"
 				>Download CV</button
 			>
 		</a>

@@ -8,12 +8,12 @@
 		<img src={habbit} alt="image" />
 		<div class="front-content">
 			<h1>Habbit Tracker</h1>
-			<h2 class="texto">Android App</h2>
+			<h2 class="text-xl">Android App</h2>
 		</div>
 		<div class="content">
 			<p class="heading">Habbit Tracker</p>
 			<p>Aplicativo mobile com o objetivo de ajudar na organização de tarefas diárias</p>
-			<p class="texto_tec">Tecnologias usadas: Flutter e Dart</p>
+			<p class="font-semibold">Tecnologias usadas: Flutter e Dart</p>
 		</div>
 	</div>
 </div>
@@ -41,10 +41,6 @@
 		font-size: 1.5rem;
 		font-weight: 600;
 		transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-	}
-	.texto {
-		font-size: 1.2rem;
-		font-weight: 400;
 	}
 
 	.card .front-content p {
@@ -85,10 +81,6 @@
 		font-weight: 700;
 	}
 
-	.texto_tec {
-		font-weight: 600;
-	}
-
 	.card:hover .content {
 		transform: translateY(0);
 	}
@@ -99,10 +91,5 @@
 
 	.card:hover .front-content p {
 		opacity: 0;
-	}
-	.link_img {
-		position: relative;
-		width: 3rem;
-		height: 3rem;
 	}
 </style>

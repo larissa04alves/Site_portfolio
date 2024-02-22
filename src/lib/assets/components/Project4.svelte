@@ -9,12 +9,12 @@
 			<img src={portfolio} alt="image" />
 			<div class="front-content">
 				<h1>Personal Portfólio</h1>
-				<h2 class="texto">Website</h2>
+				<h2 class="text-xl">Website</h2>
 			</div>
 			<div class="content">
 				<p class="heading">Personal Portfólio</p>
 				<p>Site desenvolvido para ser meu portfólio pessoal</p>
-				<p class="texto_tec">Tecnologias usadas: Svelte, CSS, TypeScript</p>
+				<p class="font-semibold">Tecnologias usadas: Svelte, CSS, TypeScript</p>
 			</div>
 		</div>
 	</a>
@@ -41,10 +41,6 @@
 		font-size: 1.5rem;
 		font-weight: 600;
 		transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-	}
-	.texto {
-		font-size: 1.2rem;
-		font-weight: 400;
 	}
 
 	.card .front-content p {
@@ -85,10 +81,6 @@
 		font-weight: 700;
 	}
 
-	.texto_tec {
-		font-weight: 600;
-	}
-
 	.card:hover .content {
 		transform: translateY(0);
 	}
@@ -99,10 +91,5 @@
 
 	.card:hover .front-content p {
 		opacity: 0;
-	}
-	.link_img {
-		position: relative;
-		width: 3rem;
-		height: 3rem;
 	}
 </style>
