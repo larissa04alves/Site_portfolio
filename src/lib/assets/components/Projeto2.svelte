@@ -1,35 +1,9 @@
 <script>
 	import { dataPortfolio } from '$lib/assets/data/dataPortfolio';
 
-	import techstore from '$lib/assets/img/techstore.svg';
 	import school from '$lib/assets/img/school.svg';
-	import habbit from '$lib/assets/img/habbit.svg';
-	import portfolio from '$lib/assets/img/portfolio.svg';
-
-	export let project1;
-	export let project2;
-	export let project3;
-	export let project4;
 </script>
 
-{#each dataPortfolio.Projeto1 as projeto1}
-	<div class="card-container">
-		<a target="_blank" href="https://tech-store-eta-eight.vercel.app/">
-			<div class="card w-full h-full">
-				<img src={techstore} alt="image" />
-				<div class="front-content">
-					<h1 class="text-xl font-semibold">{projeto1.title}</h1>
-					<h2 class="text-xl">{projeto1.category}</h2>
-				</div>
-				<div class="content">
-					<p class="heading">{projeto1.title_back}</p>
-					<p>{projeto1.description}</p>
-					<p class="font-semibold">{projeto1.tecnologias}</p>
-				</div>
-			</div>
-		</a>
-	</div>
-{/each}
 {#each dataPortfolio.Projeto2 as projeto2}
 	<div class="card-container">
 		<a target="_blank" href="https://github.com/larissa04alves/Plataforma_cursos.git">
@@ -43,42 +17,6 @@
 					<p class="heading">{projeto2.title_back}</p>
 					<p>{projeto2.description}</p>
 					<p class="font-semibold">{projeto2.tecnologias}</p>
-				</div>
-			</div>
-		</a>
-	</div>
-{/each}
-{#each dataPortfolio.Projeto3 as projeto3}
-	<div class="card-container">
-		<a href="#">
-			<div class="card w-full h-full">
-				<img src={habbit} alt="image" />
-				<div class="front-content">
-					<h1 class="text-xl font-semibold">{projeto3.title}</h1>
-					<h2 class="text-xl">{projeto3.category}</h2>
-				</div>
-				<div class="content">
-					<p class="heading">{projeto3.title_back}</p>
-					<p>{projeto3.description}</p>
-					<p class="font-semibold">{projeto3.tecnologias}</p>
-				</div>
-			</div>
-		</a>
-	</div>
-{/each}
-{#each dataPortfolio.Projeto4 as projeto4}
-	<div class="card-container">
-		<a target="_blank" href="https://portfolio-nine-eta-92.vercel.app/">
-			<div class="card w-full h-full">
-				<img src={portfolio} alt="image" />
-				<div class="front-content">
-					<h1 class="text-xl font-semibold">{projeto4.title}</h1>
-					<h2 class="text-xl">{projeto4.category}</h2>
-				</div>
-				<div class="content">
-					<p class="heading">{projeto4.title_back}</p>
-					<p>{projeto4.description}</p>
-					<p class="font-semibold">{projeto4.tecnologias}</p>
 				</div>
 			</div>
 		</a>
