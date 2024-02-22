@@ -1,10 +1,11 @@
 <script>
-	import personagem from '$lib/assets/img/personagem.svg';
-	import my_image from '$lib/assets/img/my_image.jpeg';
 	import FiltroSobre from '$lib/assets/components/FiltroSobre.svelte';
 	import Filtro_portfolio from '$lib/assets/components/FiltroPortfolio.svelte';
 	import Sociais from '$lib/assets/components/Sociais.svelte';
+
 	import favicon from '$lib/assets/img/favicon.svg';
+	import my_image from '$lib/assets/img/my_image.jpeg';
+	import personagem from '$lib/assets/img/personagem.svg';
 </script>
 
 <head>

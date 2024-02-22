@@ -1,9 +1,5 @@
 <script lang="ts">
-	import { TabGroup, Tab, TabAnchor } from '@skeletonlabs/skeleton';
-	import Project1 from '$lib/assets/components/Project1.svelte';
-	import Project2 from './Project2.svelte';
-	import Project3 from './Project3.svelte';
-	import Project4 from './Project4.svelte';
+	import { TabGroup, Tab } from '@skeletonlabs/skeleton';
 
 	let tabSet: number = 0;
 </script>
@@ -26,24 +22,11 @@
 	<svelte:fragment slot="panel">
 		{#if tabSet === 0}
 			<div class="flex w-full gap-10">
-				<div class="flex flex-col gap-10">
-					<Project1 />
-					<Project2 />
-				</div>
-				<div class="flex flex-col gap-10">
-					<Project3 />
-					<Project4 />
-				</div>
+				<div class="flex flex-col gap-10"></div>
+				<div class="flex flex-col gap-10"></div>
 			</div>
 		{:else if tabSet === 1}
-			<div class="flex gap-10">
-				<Project1 />
-				<Project4 />
-			</div>
-		{:else if tabSet === 2}
-			<Project3 />
-		{:else if tabSet === 3}
-			<Project2 />
-		{/if}
+			<div class="flex gap-10"></div>
+		{:else if tabSet === 2}{:else if tabSet === 3}{/if}
 	</svelte:fragment>
 </TabGroup>

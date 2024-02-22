@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { TabGroup, Tab } from '@skeletonlabs/skeleton';
+	import { dataSobre } from '$lib/assets/data/dataSobre.js';
 	let tabSet: number = 0;
 </script>
 
@@ -19,24 +20,28 @@
 	<!-- Tab Panels --->
 	<svelte:fragment slot="panel">
 		{#if tabSet === 0}
-			<h1 class="text-xl font-semibold">Backend Development</h1>
-			<p>Java, Python, Dart, PostgreSQL</p>
-			<h1 class="text-xl font-semibold">Frontend Development</h1>
-			<p>Svelte, HTML/CSS</p>
-			<h1 class="text-xl font-semibold">Mobile Development</h1>
-			<p>Flutter</p>
+			{#each dataSobre.Skills as skill}
+				<h1 class="text-xl font-semibold">{skill.title}</h1>
+				<p>{skill.description}</p>
+			{/each}
 		{:else if tabSet === 1}
-			<h1 class="text-xl font-semibold">Assistente de Dados</h1>
-			<h1>out/2023 - atualmente</h1>
-			<p>UNIVATES</p>
+			{#each dataSobre.Experiencia as experiencia}
+				<h1 class="text-xl font-semibold">{experiencia.title}</h1>
+				<h1>{experiencia.date}</h1>
+				<p>{experiencia.organization}</p>
+			{/each}
 		{:else if tabSet === 2}
-			<h1 class="text-xl font-semibold">Engenharia de Software</h1>
-			<h1>2023 - atualmente</h1>
-			<p>UNIVATES</p>
+			{#each dataSobre.Educacao as educacao}
+				<h1 class="text-xl font-semibold">{educacao.title}</h1>
+				<h1>{educacao.date}</h1>
+				<p>{educacao.organization}</p>
+			{/each}
 		{:else if tabSet === 3}
-			<h1 class="text-xl font-semibold">Power BI - Básico ao Avançado</h1>
-			<h1>jan/2023</h1>
-			<p>Udemy</p>
+			{#each dataSobre.Certificados as certificado}
+				<h1 class="text-xl font-semibold">{certificado.title}</h1>
+				<h1>{certificado.date}</h1>
+				<p>{certificado.organization}</p>
+			{/each}
 		{/if}
 	</svelte:fragment>
 </TabGroup>
