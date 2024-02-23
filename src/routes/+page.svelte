@@ -35,7 +35,7 @@
 			>
 		</a>
 	</div>
-	<div class="md:flex hidden">
+	<div>
 		<img src={personagem} alt="imagem hero" />
 	</div>
 </section>
