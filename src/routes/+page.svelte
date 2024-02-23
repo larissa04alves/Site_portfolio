@@ -40,7 +40,7 @@
 	</div>
 </section>
 
-<section id="sobre" class="flex w-full h-[35rem] bg-tertiary-500 py-[1.5rem] px-[8rem]">
+<section id="sobre" class="flex w-full h-[40rem] bg-tertiary-500 py-[1.5rem] px-[8rem]">
 	<img class="hidden md:flex rounded-2xl" src={my_image} alt="minha foto" />
 
 	<div class="flex flex-col pl-[3rem]">
