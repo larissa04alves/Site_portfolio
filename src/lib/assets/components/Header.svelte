@@ -10,9 +10,9 @@
 	</a>
 
 	<nav class="hidden lg:flex gap-12 font-semibold text-base">
-		<a class="animado relative no-underline" href="/">Home</a>
-		<a class="animado relative no-underline" href="#sobre">Sobre</a>
-		<a class="animado relative no-underline" href="#portfolio">Portfólio</a>
+		<a class="animado relative no-underline" href="/#home">Home</a>
+		<a class="animado relative no-underline" href="/#sobre">Sobre</a>
+		<a class="animado relative no-underline" href="/#portfolio">Portfólio</a>
 	</nav>
 	<a href="/contato">
 		<button

@@ -12,19 +12,19 @@
 	<link rel="icon" href={favicon} />
 </head>
 
-<section class=" flex justify-between w-full py-[10rem] pr-[12rem]">
+<section id="home" class="flex justify-between w-full py-[10rem] pr-[12rem]">
 	<div class="flex items-center px-[2rem]">
 		<Sociais />
 	</div>
 	<div class="relative py-[7rem] px-[2rem]">
-		<h3 class="text-5xl font-semibold">Oi!</h3>
-		<h1 class="text-7xl font-semibold">
+		<h3 class="text-4xl font-semibold">Oi!</h3>
+		<h1 class="text-6xl font-semibold">
 			Sou <span
 				class="font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-purple-800 to-purple-600"
 				>Larissa Alves</span
 			>
 		</h1>
-		<h2 class="text-6xl font-semibold">Software Developer</h2>
+		<h2 class="text-5xl font-semibold">Software Developer</h2>
 		<a
 			target="_blank"
 			href="https://drive.google.com/file/d/1cL3zs477zX99xxtpi3qUZFjSej4Ktw9c/view?usp=sharing"
