@@ -1,4 +1,5 @@
 # Site_portfolio
+Projeto do meu portfólio profissional, utilizando Svelte, TypeScript e  TailwindCSS
 
 # create-svelte
 
