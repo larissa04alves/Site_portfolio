@@ -22,7 +22,7 @@
 		{#if tabSet === 0}
 			{#each dataSobre.Skills as skill}
 				<h1 class="text-xl font-semibold">{skill.title}</h1>
-				<p>{skill.description}</p>
+				<p class="pb-2">{skill.description}</p>
 			{/each}
 		{:else if tabSet === 1}
 			{#each dataSobre.Experiencia as experiencia}
