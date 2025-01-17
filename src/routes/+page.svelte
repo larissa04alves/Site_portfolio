@@ -27,7 +27,7 @@
 		<h2 class="text-5xl font-semibold">Software Developer</h2>
 		<a
 			target="_blank"
-			href="https://drive.google.com/file/d/1cL3zs477zX99xxtpi3qUZFjSej4Ktw9c/view?usp=sharing"
+			href="https://drive.google.com/file/d/1dVcRcCXh4RgqbLr7KGQ58E7aiCX_0ZpO/view?usp=sharing"
 		>
 			<button
 				class="flex relative left-[10rem] rounded-[0.8rem] py-[0.7rem] px-[1.2rem] bg-gradient-to-b from-purple-400 via-purple-700 to-purple-800 font-semibold text-xl mt-6 mb-20"
