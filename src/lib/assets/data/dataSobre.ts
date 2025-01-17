@@ -1,7 +1,8 @@
 export const dataSobre = {
 	Skills: [
-		{ title: 'Backend Development', description: 'Java, Python, PHP, PostgreSQL' },
-		{ title: 'Frontend Development', description: 'Svelte, HTML/CSS, React, NextJs' }
+		{ title: 'Backend Development', description: 'Java, Python, PHP, Node.js, PostgreSQL, MySQL' },
+		{ title: 'Frontend Development', description: 'Svelte, HTML/CSS, React, Next.js' },
+		{ title: 'Outros', description: 'Docker, Linux, Power BI' }
 	],
 	Experiencia: [
 		{ title: 'Assistente de Dados', date: 'out/2023 - abr/2024', organization: 'UNIVATES' }
